@@ -32,7 +32,7 @@ This will allow us to see if packets are able to reach the honeypot VM and are a
 Once you can confirm that the firewall is disabled, we can now begin on the log collection. 
 
 ## Configure and run the PowerShell script
-Copy the powershell script inside this repository (Courtesy of Josh Madakor) and open Powershel ISE. Create a new file (In the top left corner click on File>New) and paste the code here. 
+Copy the powershell script inside this repository Custom_Security_Log_Exporter.ps1 (Courtesy of Josh Madakor) and open Powershel ISE. Create a new file (In the top left corner click on File>New) and paste the code here. 
 Notice line 2 where the '$APIKey' is at. 
 
 ### Create a https://ipgeolocation.io/ account
