@@ -1,6 +1,6 @@
-# Azure-Sentinel-Threat-Map</h1>
+# Azure-Sentinel-Threat-Map
 
-## Description </h2>
+## Description 
 This project's goal was to collect logs of failed RDP logon attempts on an exposed virtual machine to graphicly present the data on a map. 
 </br>
 </br>
@@ -13,7 +13,7 @@ The data is saved on to a .log in the virtual machine which is exported to Azure
 The project is inspired by Josh Makador's Azure Sentinel's Youtube Video: https://www.youtube.com/watch?v=RoZeVbbZ0o0 </br>
 All credits go to Josh and his powershell script that allowed me to transform the data. 
 
-## Getting started</h2>
+## Getting started
 In order to begin this project, you would need an Azure account. I created a free account that gave me $200 worth of credits which is plenty for the amount of time and resources I am planning to use.
 </br>
 Create a Windows2010 virtual machine with 2gib of RAM. I ran into an issue where the lower tiers were too slow to navigate the settings:
@@ -40,10 +40,10 @@ Creat a free account and copy the API key the website generates.
 </br>
 Paste the website's API key into the PowerShell script and save the file to Desktop.
 
-## Creating a Workspace in Log Analytics Workspace </h2>
+## Creating a Workspace in Log Analytics Workspace 
 We need to enable data connectors on the target VM in order to export the logs. 
 
-## Querying the data </h2>
+## Querying the data 
 In order to clean up the fields where our precious latitiude and longitude data is, we need to have a query that can parse out the Jumbled 
 
 Note: Azure Sentinel only displays 10,000 results and all other data after will be truncated </br>
