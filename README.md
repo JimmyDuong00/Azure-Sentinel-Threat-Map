@@ -26,7 +26,7 @@ In the Windows start, enter 'wf.msc' to locate the firewall settings and disable
 
 After the firewall has been disabled, we can now test to see if external traffic is able to ping the machine.
 </br>
-On your computer, open CMD and type 'ping [enter ip address of machine] -t' </br> 
+On your computer, open CMD and type 'ping [enter ip address of machine here] -t' </br> 
 This will allow us to see if packets are able to reach the honeypot VM and are able to make it through the firewall. 
 </br>
 Once you can confirm that the firewall is disabled, we can now begin on the log collection. 
@@ -38,7 +38,7 @@ Notice line 2 where the '$APIKey' is at.
 ### Create a https://ipgeolocation.io/ account
 Creat a free account and copy the API key the website generates. 
 </br>
-Paste the website's API key into the PowerShell script and save the file to Desktop.
+Paste the website's API key into line 2 of the PowerShell script and save the file to Desktop.
 
 ## Creating a Workspace in Log Analytics Workspace 
 We need to enable data connectors on the target VM in order to export the logs. 
@@ -46,5 +46,8 @@ We need to enable data connectors on the target VM in order to export the logs.
 ## Querying the data 
 In order to clean up the fields where our precious latitiude and longitude data is, we need to have a query that can parse out the Jumbled 
 
+## Displaying IP locations in Azure Sentinel
+The final step would be taking the parsed data and display it using Sentinel.
+Navigate to Azure Sentinel and create a workbook. Here, you will 
 Note: Azure Sentinel only displays 10,000 results and all other data after will be truncated </br>
 See here: https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-limits
