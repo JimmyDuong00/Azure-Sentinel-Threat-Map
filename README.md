@@ -1,4 +1,4 @@
-# Azure-Sentinel-Threat-Map
+# Sentinel-Threat-Map
 
 ## Description 
 This project's goal was to collect logs of failed RDP logon attempts on an exposed virtual machine to graphicly present the data on a map. 
